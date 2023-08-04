@@ -1,4 +1,4 @@
 fun main(){
     println("Buenas")
-    println("Segunda salida por consola")
+    println("Segunda salida de manera grafica")
 }
