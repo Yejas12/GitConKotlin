@@ -80,12 +80,14 @@ fun main(args: Array<String>) {
 
     //WHEN
 
-    var numero = 3
+    var edad = 22
 
-    when(numero){
-        1 -> println("no es igual")
-        2 -> {println("no es igual")}
-        3 -> {println("es igual")}
+    when(edad){
+        1 -> {
+            println("bebe")
+        }
+        in 2..18 -> {println("niño")}
+        in 21..30 -> {println("adulto")}
         else -> { println("aja mani")}
     }
     */
@@ -114,12 +116,47 @@ fun main(args: Array<String>) {
     }
     */
     //DO WHILE
-
+/*
     var num = 100
     do {
         println(num)
         num--
     }while (num>= 1)
 
+*//*
+    //ARREGLOS
+
+    //arrayof: almacenar cualquier tipo de dato
+
+    var estudiantes = arrayOf("lorena","karen","tatiana",56,44,12)
+    println(estudiantes[1])
+    println(estudiantes.size)
+
+    //intarrayof: almacenar enteros
+
+    var numeros = intArrayOf(3,34,6)
+
+    var numeros = intArrayOf(12,24,36,48,60)
+
+    for(i in 0 until numeros.size){
+        println(numeros[i])
+    }
+*/
+    //ArrayListOf : Dinamica | .add - .remove
+    //arrayListOf<String>: La lista va a ser string
+    //sino, la lista recibe cualquier tipo de dato
+
+    var milista = arrayListOf("miguel","jeison",4,5)
+
+    var num1 = milista[2] as Int
+    var num2 = milista[3] as Int
+
+    println(num1+num2)
+
+    milista.forEach{
+        est -> println(est)
+    }
+
+    milista.forEachIndexed { i, est -> println("$i. $est") }
 
 }
